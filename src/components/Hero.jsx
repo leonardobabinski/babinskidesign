@@ -1,4 +1,4 @@
-import profilePhoto from '../assets/profile-photo.jpg';
+import profilePhoto from '../assets/profile-photo.png';
 
 const Hero = () => {
   const scrollToSection = (sectionId) => {
