@@ -51,7 +51,7 @@ const Hero = () => {
             <img
     				  src={profilePhoto}
     				  alt="Leonardo Babinski"
-    				  className="absolute bottom-[-40px] right-[-80px] w-[860px] max-w-none"
+    				  className="absolute bottom-[-40px] right-[-160px] w-[860px] max-w-none"
             />
           </div>
         </div>
