@@ -49,9 +49,9 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="relative min-h-[500px]">
             <img
-              src={profilePhoto}
-              alt="Leonardo Babinski"
-              className="absolute bottom-[-20px] right-0 w-[500px] max-w-none"
+    				  src={profilePhoto}
+    				  alt="Leonardo Babinski"
+    				  className="absolute bottom-[-40px] right-0 w-[860px] max-w-none"
             />
           </div>
         </div>
