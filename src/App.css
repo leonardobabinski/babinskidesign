@@ -152,11 +152,12 @@
 }
 
 .profile-image {
-  width: 300px;
-  height: auto; /* mantém proporção da imagem */
-  border-radius: 0;
+  width: 500px; /* Aumente o tamanho */
+  height: auto;
+  object-fit: contain;
   border: none;
-  object-fit: contain; /* ou cover, dependendo do resultado desejado */
+  border-radius: 0;
+  margin-bottom: -60px; /* Cola com a parte de baixo */
 }
 
 /* Typography matching Figma */
