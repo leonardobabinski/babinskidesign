@@ -85,6 +85,12 @@
   padding-top: 80px; /* Espaço para o header fixo */
 }
 
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  @apply sm:grid-cols-2 items-end h-full;
+}
+
 .about-section {
   background: #f4d03f;
   color: #2c5f5f;
