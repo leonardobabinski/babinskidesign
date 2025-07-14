@@ -81,8 +81,8 @@
 /* Estilos específicos do design Figma */
 .hero-section {
   background: #2c5f5f;
-  min-height: 100vh;
-  padding-top: 80px; /* Espaço para o header fixo */
+  padding-top: 80px;
+  padding-bottom: 40px; /* opcional, para espaçamento visual controlado */
 }
 
 .hero-grid {
