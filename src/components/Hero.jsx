@@ -53,7 +53,7 @@ const Hero = () => {
               alt="Leonardo Babinski"
               className="
                 w-[70vw] max-w-[320px]
-                sm:absolute sm:bottom-0 sm:right-[-8vw] sm:w-[65vw] sm:max-w-[860px]
+                sm:absolute sm:bottom-0 sm:right-[-40vw] sm:w-[65vw] sm:max-w-[860px]
               "
             />
           </div>
