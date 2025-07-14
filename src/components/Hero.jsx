@@ -62,6 +62,7 @@ const Hero = () => {
                 w-[90vw] max-w-[400px]
                 sm:w-[60vw] sm:max-w-[500px]
                 md:w-[50vw] md:max-w-[700px]
+                md:translate-x-12 lg:translate-x-20
               "
             />
           </div>
