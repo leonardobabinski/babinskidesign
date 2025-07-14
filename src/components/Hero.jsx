@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="hero-section">
+    <section id="home" className="hero-section relative overflow-hidden">
       <div className="container-custom">
         <div className="hero-grid">
           {/* Content */}
@@ -47,11 +47,11 @@ const Hero = () => {
           </div>
           
           {/* Profile Image */}
-          <div className="flex justify-end items-end mt-10 relative">
+          <div className="relative min-h-[500px]">
             <img
               src={profilePhoto}
               alt="Leonardo Babinski"
-              className="w-[500px] absolute bottom-0 right-0"
+              className="absolute bottom-[-20px] right-0 w-[500px] max-w-none"
             />
           </div>
         </div>
