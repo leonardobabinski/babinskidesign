@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="hero-section relative overflow-hidden min-h-screen flex items-center"
+      className="hero-section relative overflow-hidden min-h-screen flex items-stretch"
     >
       <div className="container-custom w-full">
         <div className="grid sm:grid-cols-2 h-full">
@@ -59,9 +59,10 @@ const Hero = () => {
               src={profilePhoto}
               alt="Leonardo Babinski"
               className="
-                relative bottom-[-40px]
+                 relative bottom-[-40px]
                 w-[70vw] max-w-[320px]
                 sm:w-[65vw] sm:max-w-[860px]
+                object-contain
               "
             />
           </div>
