@@ -47,11 +47,14 @@ const Hero = () => {
           </div>
           
           {/* Profile Image */}
-          <div className="relative min-h-[500px]">
+          <div className="relative min-h-[400px] sm:min-h-[500px] flex justify-center sm:block">
             <img
-    				  src={profilePhoto}
-    				  alt="Leonardo Babinski"
-    				  className="absolute bottom-[-40px] right-[-160px] w-[860px] max-w-none"
+              src={profilePhoto}
+              alt="Leonardo Babinski"
+              className="
+                w-[70vw] max-w-[320px]
+                sm:absolute sm:bottom-0 sm:right-[-8vw] sm:w-[65vw] sm:max-w-[860px]
+              "
             />
           </div>
         </div>
