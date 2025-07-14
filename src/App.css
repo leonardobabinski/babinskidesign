@@ -43,20 +43,19 @@
 
 :root {
   --radius: 0.5rem;
-  /* Cores baseadas no design do Figma */
-  --background: #17323A; /* Cor teal/azul escuro do hero */
+  --background: #17323A;
   --foreground: #F0F8FF;
-  --card: #DABB52; /* Amarelo da seção About */
+  --card: #DABB52;
   --card-foreground: #17323A;
   --popover: #17323A;
   --popover-foreground: #F0F8FF;
-  --primary: #DABB52; /* Amarelo dourado */
+  --primary: #DABB52;
   --primary-foreground: #17323A;
   --secondary: #F0F8FF;
   --secondary-foreground: #17323A;
   --muted: #F0F8FF;
   --muted-foreground: #666666;
-  --accent:#DABB52;
+  --accent: #DABB52;
   --accent-foreground: #17323A;
   --destructive: #ef4444;
   --border: #e5e5e5;
@@ -80,9 +79,9 @@
 
 /* Estilos específicos do design Figma */
 .hero-section {
-  background: #2c5f5f;
+  background: #17323A;
   padding-top: 80px;
-  padding-bottom: 40px; /* opcional, para espaçamento visual controlado */
+  padding-bottom: 40px;
 }
 
 .hero-grid {
@@ -92,37 +91,37 @@
 }
 
 .about-section {
-  background: #f4d03f;
-  color: #2c5f5f;
+  background: #DABB52;
+  color: #17323A;
 }
 
 .services-section {
-  background: #ffffff;
-  color: #2c5f5f;
+  background: #F0F8FF;
+  color: #17323A;
 }
 
 .portfolio-section {
-  background: #2c5f5f;
-  color: #ffffff;
+  background: #17323A;
+  color: #F0F8FF;
 }
 
 .testimonials-section {
-  background: #f4d03f;
-  color: #2c5f5f;
+  background: #DABB52;
+  color: #17323A;
 }
 
 .contact-section {
-  background: #2c5f5f;
-  color: #ffffff;
+  background: #17323A;
+  color: #F0F8FF;
 }
 
 .gradient-text {
-  color: #f4d03f;
+  color: #DABB52;
 }
 
 .btn-primary {
-  background: #f4d03f;
-  color: #2c5f5f;
+  background: #DABB52;
+  color: #17323A;
   border: none;
   padding: 12px 32px;
   border-radius: 8px;
@@ -133,15 +132,15 @@
 }
 
 .btn-primary:hover {
-  background: #f1c40f;
+  background: #c9aa42;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(244, 208, 63, 0.3);
+  box-shadow: 0 4px 12px rgba(218, 187, 82, 0.3);
 }
 
 .btn-secondary {
-  background: #ffffff;
-  color: #2c5f5f;
-  border: 2px solid #ffffff;
+  background: #F0F8FF;
+  color: #17323A;
+  border: 2px solid #F0F8FF;
   padding: 12px 32px;
   border-radius: 8px;
   font-weight: 600;
@@ -152,18 +151,18 @@
 
 .btn-secondary:hover {
   background: transparent;
-  color: #ffffff;
-  border-color: #ffffff;
+  color: #F0F8FF;
+  border-color: #F0F8FF;
   transform: translateY(-2px);
 }
 
 .profile-image {
-  width: 500px; /* Aumente o tamanho */
+  width: 500px;
   height: auto;
   object-fit: contain;
   border: none;
   border-radius: 0;
-  margin-bottom: -60px; /* Cola com a parte de baixo */
+  margin-bottom: -60px;
 }
 
 /* Typography matching Figma */
@@ -242,19 +241,19 @@
   .container-custom {
     padding: 0 2rem;
   }
-  
+
   .hero-title {
     font-size: 3rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.125rem;
   }
-  
+
   .section-title {
     font-size: 3rem;
   }
-  
+
   .profile-image {
     width: 350px;
     height: 350px;
@@ -267,19 +266,19 @@
     gap: 4rem;
     text-align: left;
   }
-  
+
   .hero-title {
     font-size: 3.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.25rem;
   }
-  
+
   .graphic-designer-label {
     font-size: 1.125rem;
   }
-  
+
   .profile-image {
     width: 400px;
     height: 400px;
@@ -290,7 +289,7 @@
   .hero-title {
     font-size: 4rem;
   }
-  
+
   .section-title {
     font-size: 3.5rem;
   }
@@ -302,13 +301,12 @@
   .btn-secondary:hover {
     transform: none;
   }
-  
+
   .btn-primary:active {
     transform: scale(0.98);
   }
-  
+
   .btn-secondary:active {
     transform: scale(0.98);
   }
 }
-
