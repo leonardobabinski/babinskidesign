@@ -9,35 +9,42 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="hero-section relative overflow-hidden min-h-screen">
-      <div className="container-custom">
-        <div className="hero-grid">
-          {/* Content */}
-          <div className="grid sm:grid-cols-2 h-full items-end">
+    <section
+      id="home"
+      className="hero-section relative overflow-hidden min-h-screen flex items-center"
+    >
+      <div className="container-custom w-full">
+        <div className="grid sm:grid-cols-2 h-full">
+          
+          {/* Lado esquerdo (texto) */}
+          <div className="flex flex-col justify-center gap-6">
             <p className="graphic-designer-label text-white/80 text-sm md:text-base">
               Graphic Designer
             </p>
-            
+
             <h1 className="hero-title text-white">
               Hey, I'm{' '}
               <span className="gradient-text">Leonardo Babinski</span>
             </h1>
-            
+
             <p className="hero-subtitle text-white/90">
               Here, you'll find a showcase of my work, where{' '}
               <span className="gradient-text">creativity</span> meets{' '}
-              <span className="gradient-text">functionality</span>. Explore my projects and{' '}
-              <span className="gradient-text">let's create something amazing together!</span>
+              <span className="gradient-text">functionality</span>. Explore my
+              projects and{' '}
+              <span className="gradient-text">
+                let's create something amazing together!
+              </span>
             </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animate-delay-400">
-              <button 
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button
                 onClick={() => scrollToSection('contact')}
                 className="btn-primary w-full sm:w-auto text-center"
               >
                 Hire Me
               </button>
-              <button 
+              <button
                 onClick={() => scrollToSection('portfolio')}
                 className="btn-secondary w-full sm:w-auto text-center"
               >
@@ -45,13 +52,14 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          
-          {/* Profile Image */}
-          <div className="relative w-full h-full flex items-end justify-center">
+
+          {/* Lado direito (imagem) */}
+          <div className="relative flex items-end justify-center h-full">
             <img
               src={profilePhoto}
               alt="Leonardo Babinski"
               className="
+                relative bottom-[-40px]
                 w-[70vw] max-w-[320px]
                 sm:w-[65vw] sm:max-w-[860px]
               "
@@ -64,4 +72,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
