@@ -47,11 +47,11 @@ const Hero = () => {
           </div>
           
           {/* Profile Image */}
-          <div className="flex justify-center animate-fade-in-up animate-delay-200">
-            <img 
-              src={profilePhoto} 
-              alt="Leonardo Babinski" 
-              className="profile-image"
+          <div className="flex justify-end items-end mt-10 relative">
+            <img
+              src={profilePhoto}
+              alt="Leonardo Babinski"
+              className="w-[500px] absolute bottom-0 right-0"
             />
           </div>
         </div>
