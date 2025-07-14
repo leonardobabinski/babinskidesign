@@ -153,10 +153,10 @@
 
 .profile-image {
   width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  border: 8px solid #f4d03f;
-  object-fit: cover;
+  height: auto; /* mantém proporção da imagem */
+  border-radius: 0;
+  border: none;
+  object-fit: contain; /* ou cover, dependendo do resultado desejado */
 }
 
 /* Typography matching Figma */
