@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="hero-section relative overflow-hidden">
+    <section id="home" className="hero-section relative overflow-hidden min-h-screen flex items-end">
       <div className="container-custom">
         <div className="hero-grid">
           {/* Content */}
@@ -47,18 +47,19 @@ const Hero = () => {
           </div>
           
           {/* Profile Image */}
-          <div className="relative min-h-[400px] sm:min-h-0">
-            <img
-              src={profilePhoto}
-              alt="Leonardo Babinski"
-              className="
-                absolute bottom-0
-                left-1/2 translate-x-[-50%]
-                sm:left-auto sm:right-[-8vw] sm:translate-x-0
-                w-[70vw] max-w-[320px]
-                sm:w-[65vw] sm:max-w-[860px]
-              "
-            />
+            <div className="relative w-full h-[60vh] sm:h-auto">
+              <img
+                src={profilePhoto}
+                alt="Leonardo Babinski"
+                className="
+                  absolute bottom-0
+                  left-1/2 translate-x-[-50%]
+                  sm:left-auto sm:right-[-8vw] sm:translate-x-0
+                  w-[70vw] max-w-[320px]
+                  sm:w-[65vw] sm:max-w-[860px]
+                "
+              />
+            </div>
           </div>
         </div>
       </div>
