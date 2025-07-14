@@ -44,51 +44,51 @@ const Portfolio = () => {
     {
       id: 6,
       title: "Tradestar.com",
-      category: "Web Design / Lading",
+      category: "Web Design / Landing",
       image: project3,
       description: "Landing page design and development"
     }
   ];
 
   return (
-    <section id="portfolio" className="py-20 bg-[#2c5f5f]">
+    <section id="portfolio" className="py-12 md:py-20 bg-[#2c5f5f]">
       <div className="container-custom">
-        <h2 className="text-4xl font-bold text-center mb-4 text-white">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
           My Portfolio
         </h2>
         
-        <p className="text-center text-white/80 mb-16 max-w-4xl mx-auto">
+        <p className="text-center text-white/80 mb-12 md:mb-16 max-w-4xl mx-auto text-sm md:text-base leading-relaxed">
           Explore my portfolio — from branding and packaging to UI/UX, video editing, and motion graphics. Each project is crafted to deliver bold, engaging, and meaningful visual experiences.
         </p>
         
-        {/* Portfolio Grid - 2 rows x 3 columns */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {/* Portfolio Grid - Responsivo */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {projects.map((project) => (
             <div 
               key={project.id}
-              className="group cursor-pointer bg-white rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300"
+              className="group cursor-pointer bg-white rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300 shadow-lg"
             >
               <div className="relative overflow-hidden">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-40 md:h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="bg-[#f4d03f] p-3 rounded-full">
-                    <ExternalLink className="text-[#2c5f5f] w-6 h-6" />
+                  <div className="bg-[#f4d03f] p-2 md:p-3 rounded-full">
+                    <ExternalLink className="text-[#2c5f5f] w-5 h-5 md:w-6 md:h-6" />
                   </div>
                 </div>
               </div>
               
-              <div className="p-6">
-                <div className="text-sm text-[#f4d03f] font-medium mb-2">
+              <div className="p-4 md:p-6">
+                <div className="text-xs md:text-sm text-[#f4d03f] font-medium mb-2">
                   {project.category}
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-[#2c5f5f]">
+                <h3 className="text-lg md:text-xl font-semibold mb-2 text-[#2c5f5f]">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-xs md:text-sm">
                   {project.description}
                 </p>
               </div>
