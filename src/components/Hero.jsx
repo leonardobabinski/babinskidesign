@@ -53,15 +53,18 @@ const Hero = () => {
           </div>
 
           {/* Imagem à direita */}
-          <div className="flex justify-center sm:justify-end items-end">
+          <div className="relative flex justify-end items-end overflow-visible">
             <img
               src={profilePhoto}
               alt="Leonardo Babinski"
               className="
-                relative bottom-[-40px]
-                w-[90vw] max-w-[400px]
+                absolute bottom-[-40px] 
+                right-[-80px] 
+                w-[90vw] max-w-[330px]
                 sm:w-[60vw] sm:max-w-[500px]
                 md:w-[50vw] md:max-w-[700px]
+                md:right-[-100px] 
+                lg:right-[-140px]
               "
             />
           </div>
