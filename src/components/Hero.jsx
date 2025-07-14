@@ -58,6 +58,7 @@ const Hero = () => {
               src={profilePhoto}
               alt="Leonardo Babinski"
               className="
+                relative bottom-[-40px]
                 w-[85vw] max-w-[300px]
                 sm:w-[60vw] sm:max-w-[500px]
                 md:w-[50vw] md:max-w-[700px]
