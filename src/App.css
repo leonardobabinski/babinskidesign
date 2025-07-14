@@ -44,24 +44,24 @@
 :root {
   --radius: 0.5rem;
   /* Cores baseadas no design do Figma */
-  --background: #2c5f5f; /* Cor teal/azul escuro do hero */
-  --foreground: #ffffff;
-  --card: #f4d03f; /* Amarelo da seção About */
-  --card-foreground: #2c5f5f;
-  --popover: #2c5f5f;
-  --popover-foreground: #ffffff;
-  --primary: #f4d03f; /* Amarelo dourado */
-  --primary-foreground: #2c5f5f;
-  --secondary: #ffffff;
-  --secondary-foreground: #2c5f5f;
-  --muted: #ffffff;
+  --background: #17323A; /* Cor teal/azul escuro do hero */
+  --foreground: #F0F8FF;
+  --card: #DABB52; /* Amarelo da seção About */
+  --card-foreground: #17323A;
+  --popover: #17323A;
+  --popover-foreground: #F0F8FF;
+  --primary: #DABB52; /* Amarelo dourado */
+  --primary-foreground: #17323A;
+  --secondary: #F0F8FF;
+  --secondary-foreground: #17323A;
+  --muted: #F0F8FF;
   --muted-foreground: #666666;
-  --accent: #f4d03f;
-  --accent-foreground: #2c5f5f;
+  --accent:#DABB52;
+  --accent-foreground: #17323A;
   --destructive: #ef4444;
   --border: #e5e5e5;
-  --input: #ffffff;
-  --ring: #f4d03f;
+  --input: #F0F8FF;
+  --ring: #DABB52;
 }
 
 @layer base {
