@@ -53,7 +53,7 @@ const Hero = () => {
           </div>
 
           {/* Imagem à direita */}
-          <div className="flex justify-center sm:justify-end items-end">
+          <div className="flex justify-center sm:justify-end items-end pr-0 md:pr-[8vw] lg:pr-[12vw]">
             <img
               src={profilePhoto}
               alt="Leonardo Babinski"
