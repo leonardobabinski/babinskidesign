@@ -11,20 +11,19 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="hero-section relative overflow-hidden min-h-screen flex items-stretch"
+      className="hero-section relative overflow-hidden py-12"
     >
       <div className="container-custom w-full">
-        <div className="grid sm:grid-cols-2 h-full">
+        <div className="grid sm:grid-cols-2 items-end gap-8">
           
-          {/* Lado esquerdo (texto) */}
-          <div className="flex flex-col justify-center gap-6">
+          {/* Texto à esquerda */}
+          <div className="flex flex-col gap-6">
             <p className="graphic-designer-label text-white/80 text-sm md:text-base">
               Graphic Designer
             </p>
 
             <h1 className="hero-title text-white">
-              Hey, I'm{' '}
-              <span className="gradient-text">Leonardo Babinski</span>
+              Hey, I'm <span className="gradient-text">Leonardo Babinski</span>
             </h1>
 
             <p className="hero-subtitle text-white/90">
@@ -37,7 +36,7 @@ const Hero = () => {
               </span>
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <button
                 onClick={() => scrollToSection('contact')}
                 className="btn-primary w-full sm:w-auto text-center"
@@ -53,16 +52,16 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Lado direito (imagem) */}
-          <div className="relative flex items-end justify-center h-full">
+          {/* Imagem à direita */}
+          <div className="flex justify-center sm:justify-end items-end">
             <img
               src={profilePhoto}
               alt="Leonardo Babinski"
               className="
-                 relative bottom-[-40px]
-                w-[70vw] max-w-[320px]
+                relative 
+                bottom-0 sm:bottom-[-40px]
+                w-[90vw] max-w-[360px]
                 sm:w-[65vw] sm:max-w-[860px]
-                object-contain
               "
             />
           </div>
