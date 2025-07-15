@@ -37,7 +37,7 @@ const Portfolio = () => {
       id: 4,
       title: "Em Casa Tem",
       category: "Package Design",
-      image: project1,
+      image: project4,
       description: "Product packaging design",
       link: "https://www.behance.net/gallery/192272911/Algumas-embalagens"
     },
@@ -45,7 +45,7 @@ const Portfolio = () => {
       id: 5,
       title: "Tradestar Ferramentas",
       category: "Postcard / Catalog",
-      image: project2,
+      image: project5,
       description: "Print marketing materials",
       link: "https://www.behance.net/gallery/218502663/Tradestar-Ferramentas-Catalogo-2025"
     },
@@ -53,7 +53,7 @@ const Portfolio = () => {
       id: 6,
       title: "Tradestar.com",
       category: "Web Design / Landing",
-      image: project3,
+      image: project6,
       description: "Landing page design and development",
       link: "https://tradestar.com.br/"
     }
