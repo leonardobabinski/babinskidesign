@@ -29,13 +29,13 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-[#f4d03f]">
+    <section id="testimonials" className="py-20 bg-[#DABB52]">
       <div className="container-custom">
-        <h2 className="text-4xl font-bold text-center mb-4 text-[#2c5f5f]">
+        <h2 className="text-4xl font-bold text-center mb-4 text-[#17323A]">
           What Clients Say
         </h2>
         
-        <p className="text-center text-[#2c5f5f]/80 mb-16 max-w-2xl mx-auto">
+        <p className="text-center text-[#17323A]/80 mb-16 max-w-2xl mx-auto">
           Don't just take my word for it. Here's what some of my clients have to say about working with me.
         </p>
         
@@ -50,7 +50,7 @@ const Testimonials = () => {
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star 
                     key={i} 
-                    className="w-5 h-5 fill-[#f4d03f] text-[#f4d03f]" 
+                    className="w-5 h-5 fill-[#DABB52] text-[#DABB52]" 
                   />
                 ))}
               </div>
@@ -62,11 +62,11 @@ const Testimonials = () => {
               
               {/* Client Info */}
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-[#2c5f5f] rounded-full flex items-center justify-center text-white font-semibold">
+                <div className="w-12 h-12 bg-[#17323A] rounded-full flex items-center justify-center text-white font-semibold">
                   {testimonial.avatar}
                 </div>
                 <div>
-                  <div className="font-semibold text-[#2c5f5f]">
+                  <div className="font-semibold text-[#17323A]">
                     {testimonial.name}
                   </div>
                   <div className="text-sm text-gray-600">
