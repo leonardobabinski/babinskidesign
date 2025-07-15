@@ -65,7 +65,7 @@ const Portfolio = () => {
         {/* Portfolio Grid - Responsivo */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {projects.map((project) => (
-            <div 
+            <a
               key={project.id}
               href={project.link}
               target="_blank"
@@ -83,7 +83,7 @@ const Portfolio = () => {
                     <ExternalLink className="text-[#2c5f5f] w-5 h-5 md:w-6 md:h-6" />
                   </div>
                 </div>
-              </div>
+              </a>
               
               <div className="p-4 md:p-6">
                 <div className="text-xs md:text-sm text-[#17323A] font-medium mb-2">
