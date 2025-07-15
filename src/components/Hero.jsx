@@ -66,7 +66,7 @@ const Hero = () => {
                 md:absolute md:bottom-[-40px] md:right-[-80px]
                 md:w-[50vw] md:max-w-[600px]
           
-                lg:right-[-120px] lg:max-w-[650px]
+                lg:right-[-120px] lg:max-w-[840px]
               "
             />
           </div>
