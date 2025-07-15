@@ -40,15 +40,12 @@ const Services = () => {
               key={index}
               className="text-center p-4 md:p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-[#f4d03f]/50"
             >
+}
               <svg width="88" height="54" viewBox="0 0 88 54" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="22" cy="27" r="20" stroke="#DABB52" stroke-width="4"/>
 <circle cx="44" cy="27" r="20" stroke="#DABB52" stroke-width="4"/>
 <circle cx="66" cy="27" r="20" stroke="#DABB52" stroke-width="4"/>
 </svg>
-}
-              <div className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-3 md:mb-4 bg-[#f4d03f] rounded-lg flex items-center justify-center">
-                <span className="text-lg md:text-2xl">📦</span>
-              </div>
               
               <h3 className="text-base md:text-lg font-semibold mb-2 md:mb-3 text-[#2c5f5f]">
                 {service.title}
