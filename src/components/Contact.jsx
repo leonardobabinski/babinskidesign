@@ -69,7 +69,7 @@ const Contact = () => {
                     href="mailto:babinski@babinskidesign.com.br" 
                     className="text-[#DABB52] hover:text-white transition-colors text-sm md:text-base"
                   >
-                    leonardo@babinski.com
+                    babinski@babinskidesign.com.br
                   </a>
                 </div>
               </div>
@@ -80,13 +80,16 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1 text-sm md:text-base">Location</h4>
-                  <p className="text-[#17323A] text-sm md:text-base">Curitiba, PR - Brazil</p>
+                  <p className="text-[#DABB52] text-sm md:text-base">Curitiba, PR - Brazil</p>
                 </div>
               </div>
             </div>
 
             {/* Contact Form */}
-            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+            <form 
+            action="https://formspree.io/f/meozqarw"
+            method="POST"
+            className="space-y-4 md:space-y-6">
               <div>
                 <label htmlFor="name" className="block text-white font-medium mb-2 text-sm md:text-base">
                   Name *
@@ -95,8 +98,6 @@ const Contact = () => {
                   type="text"
                   id="name"
                   name="name"
-                  value={formData.name}
-                  onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:border-[#f4d03f] transition-colors text-sm md:text-base"
                   placeholder="Your name"
@@ -111,8 +112,6 @@ const Contact = () => {
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:border-[#f4d03f] transition-colors text-sm md:text-base"
                   placeholder="your@email.com"
@@ -126,8 +125,6 @@ const Contact = () => {
                 <textarea
                   id="message"
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   required
                   rows={5}
                   className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:border-[#f4d03f] transition-colors resize-none text-sm md:text-base"
