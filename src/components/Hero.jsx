@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="hero-section relative overflow-hidden py-12"
+      className="hero-section relative overflow-hidden py-10"
     >
       <div className="container-custom w-full">
         <div className="grid sm:grid-cols-2 items-end gap-8">

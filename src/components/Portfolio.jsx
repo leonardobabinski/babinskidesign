@@ -52,7 +52,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="relative bg-[#F0F8FF] py-12 md:py-20 overflow-hidden">
+    <section id="portfolio" className="relative bg-[#F0F8FF] py-10 md:py-10 overflow-hidden">
 	<div className="absolute top-0 left-0 w-full h-[300px] bg-[#17323A] z-0"></div>
       <div className="container-custom relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[#F0F8FF]">
