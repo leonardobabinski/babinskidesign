@@ -11,7 +11,8 @@ const Portfolio = () => {
       title: "Afternoon in The Park",
       category: "Motion Graphics",
       image: project1,
-      description: "Animated visual storytelling project"
+      description: "Animated visual storytelling project",
+      link: "https://www.behance.net/gallery/173162441/An-Afternoon-in-the-Park-Motion-Graphics"
     },
     {
       id: 2,
