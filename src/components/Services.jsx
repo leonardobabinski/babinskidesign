@@ -77,7 +77,11 @@ const Services = () => {
             <div 
               key={index}
               className="text-center p-4 md:p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-all duration-300 hover:border-[#DABB52]/50"
-            >         
+            >       
+                  {/* Ícone SVG */}
+    <div className="flex justify-center items-center h-[54px] mb-4">
+      {service.icon}
+    </div>
               <h3 className="text-base md:text-lg font-semibold mb-2 md:mb-3 text-[#17323A]">
                 {service.title}
               </h3>
