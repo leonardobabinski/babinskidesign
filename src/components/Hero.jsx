@@ -62,6 +62,7 @@ const Hero = () => {
               alt="Leonardo Babinski"
               className="
               w-full h-auto
+              profile-image
               "
             />
           </div>
