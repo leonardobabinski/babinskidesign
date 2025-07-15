@@ -71,7 +71,7 @@ const Portfolio = () => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group cursor-pointer bg-[#F0F8FF] rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300 shadow-lg"
+              className="group cursor-pointer bg-white rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300 shadow-lg"
             >
               <div className="relative overflow-hidden">
                 <img 
