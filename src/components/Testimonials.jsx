@@ -29,7 +29,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-[#DABB52]">
+    <section id="testimonials" className="py-10 bg-[#DABB52]">
       <div className="container-custom">
         <h2 className="text-4xl font-bold text-center mb-4 text-[#17323A]">
           What Clients Say

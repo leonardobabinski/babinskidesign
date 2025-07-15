@@ -23,18 +23,18 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-10 md:py-10 bg-[#2c5f5f]">
+    <section id="contact" className="py-10 md:py-10 bg-[#17323A]">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[F0F8FF]">
             Get In Touch
           </h2>
           
           <div className="text-center mb-12 md:mb-16">
-            <h3 className="text-xl md:text-2xl font-semibold mb-4 text-[#f4d03f]">
+            <h3 className="text-xl md:text-2xl font-semibold mb-4 text-[#DABB52]">
               Let's Work Together
             </h3>
-            <p className="text-white/80 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+            <p className="text-[F0F8FF]/90 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
               Ready to bring your vision to life? I'm here to help you create compelling designs that make an impact. Let's discuss your project and explore how we can collaborate.
             </p>
           </div>
@@ -43,14 +43,14 @@ const Contact = () => {
             {/* Contact Info */}
             <div className="space-y-6 md:space-y-8">
               <div className="flex items-start space-x-4">
-                <div className="bg-[#f4d03f] p-3 rounded-lg flex-shrink-0">
+                <div className="bg-[#DABB52] p-3 rounded-lg flex-shrink-0">
                   <Phone className="text-[#2c5f5f] w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1 text-sm md:text-base">Phone</h4>
                   <a 
                     href="tel:+5511999999999" 
-                    className="text-[#f4d03f] hover:text-white transition-colors text-sm md:text-base"
+                    className="text-[#DABB52] hover:text-white transition-colors text-sm md:text-base"
                   >
                     +55 (11) 99999-9999
                   </a>
@@ -58,14 +58,14 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-[#f4d03f] p-3 rounded-lg flex-shrink-0">
-                  <Mail className="text-[#2c5f5f] w-5 h-5 md:w-6 md:h-6" />
+                <div className="bg-[#DABB52] p-3 rounded-lg flex-shrink-0">
+                  <Mail className="text-[#17323A] w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1 text-sm md:text-base">Email</h4>
                   <a 
                     href="mailto:leonardo@babinski.com" 
-                    className="text-[#f4d03f] hover:text-white transition-colors text-sm md:text-base"
+                    className="text-[#DABB52] hover:text-white transition-colors text-sm md:text-base"
                   >
                     leonardo@babinski.com
                   </a>
@@ -73,8 +73,8 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-[#f4d03f] p-3 rounded-lg flex-shrink-0">
-                  <MapPin className="text-[#2c5f5f] w-5 h-5 md:w-6 md:h-6" />
+                <div className="bg-[#DABB52] p-3 rounded-lg flex-shrink-0">
+                  <MapPin className="text-[#17323A] w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1 text-sm md:text-base">Location</h4>
