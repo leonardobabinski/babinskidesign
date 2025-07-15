@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
 import project1 from '../assets/Afternoon.png';
-import project2 from '../assets/project2.png';
-import project3 from '../assets/project3.png';
+import project2 from '../assets/tsferramentas2.png';
+import project3 from '../assets/Imovity.png';
+import project4 from '../assets/inga.png';
+import project5 from '../assets/tsferramentas.png';
+import project6 from '../assets/tradestar.png';
 
 const Portfolio = () => {
   const projects = [
@@ -19,35 +22,40 @@ const Portfolio = () => {
       title: "Tradestar Ferramentas",
       category: "Social Media / Instagram",
       image: project2,
-      description: "Social media campaign design"
+      description: "Social media",
+      link: "https://www.behance.net/gallery/218502335/Tradestar-Ferramentas-Social-Media"
     },
     {
       id: 3,
       title: "Imovity",
       category: "Branding",
       image: project3,
-      description: "Complete brand identity design"
+      description: "Complete brand identity design",
+      link: "https://www.behance.net/gallery/216802011/Imovity"
     },
     {
       id: 4,
       title: "Em Casa Tem",
       category: "Package Design",
       image: project1,
-      description: "Product packaging design"
+      description: "Product packaging design",
+      link: "https://www.behance.net/gallery/192272911/Algumas-embalagens"
     },
     {
       id: 5,
       title: "Tradestar Ferramentas",
       category: "Postcard / Catalog",
       image: project2,
-      description: "Print marketing materials"
+      description: "Print marketing materials",
+      link: "https://www.behance.net/gallery/218502663/Tradestar-Ferramentas-Catalogo-2025"
     },
     {
       id: 6,
       title: "Tradestar.com",
       category: "Web Design / Landing",
       image: project3,
-      description: "Landing page design and development"
+      description: "Landing page design and development",
+      link: "https://tradestar.com.br/"
     }
   ];
 
