@@ -211,7 +211,6 @@
 /* Layout específico */
 .container-custom {
   width: 100%;
-  max-width: 100vw;
   padding-left: 2rem;
   padding-right: 2rem;
   margin-left: auto;
