@@ -13,7 +13,7 @@ const Hero = () => {
       id="home"
       className="hero-section relative overflow-hidden py-10"
     >
-      <div className="container-custom w-full">
+      <div className="container-custom w-full relative">
         <div className="grid sm:grid-cols-2 items-end gap-8">
           
           {/* Texto à esquerda */}
@@ -53,10 +53,9 @@ const Hero = () => {
           </div>
 
           {/* Imagem à direita */}
-          <div className="relative">
             <div className="hidden md:flex relative justify-center sm:justify-end self-end overflow-visible
                 w-full md:max-w-[800px] lg:max-w-[1920px]
-                m:absolute md:bottom-[-40px] md:right-[-100px] lg:right-[-120px]"
+                md:absolute md:bottom-[-40px] md:right-[-100px] lg:right-[-120px]"
             >
               <img
                 src={profilePhoto}
@@ -66,7 +65,6 @@ const Hero = () => {
                 "
               />
             </div>
-          </div>
         </div>
       </div>
     </section>
