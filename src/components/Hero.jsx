@@ -54,18 +54,18 @@ const Hero = () => {
 
           {/* Imagem à direita */}
           <div className="relative">
-          <div className="hidden md:flex relative flex justify-center sm:justify-end self-end overflow-visible
-          w-full md:max-w-[600px] lg:max-w-[80%]
-          md:absolute md:bottom-[-40px] md:right-[-100px] lg:right-[-100px]"
-          >
-            <img
-              src={profilePhoto}
-              alt="Leonardo Babinski"
-              className="
-              w-full h-auto
-              "
-            />
-          </div>
+            <div className="hidden md:flex relative justify-center sm:justify-end self-end overflow-visible
+                w-full md:max-w-[800px] lg:max-w-[1000px]
+                m:absolute md:bottom-[-40px] md:right-[-100px] lg:right-[-120px]"
+            >
+              <img
+                src={profilePhoto}
+                alt="Leonardo Babinski"
+                className="
+                w-full h-auto
+                "
+              />
+            </div>
           </div>
         </div>
       </div>
