@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
-import project1 from '../assets/project1.jpg';
+import project1 from '../assets/afternoon.png';
 import project2 from '../assets/project2.png';
 import project3 from '../assets/project3.png';
 
