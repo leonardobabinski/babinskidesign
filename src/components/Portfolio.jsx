@@ -52,14 +52,14 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="relative bg-white py-12 md:py-20 overflow-hidden">
+    <section id="portfolio" className="relative bg-[#F0F8FF] py-12 md:py-20 overflow-hidden">
 	<div className="absolute top-0 left-0 w-full h-[300px] bg-[#17323A] z-0"></div>
       <div className="container-custom relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[#F0F8FF]">
           My Portfolio
         </h2>
         
-        <p className="text-center text-white/80 mb-12 md:mb-16 max-w-4xl mx-auto text-sm md:text-base leading-relaxed">
+        <p className="text-center text-[#F0F8FF]/90 mb-12 md:mb-16 max-w-4xl mx-auto text-sm md:text-base leading-relaxed">
           Explore my portfolio — from branding and packaging to UI/UX, video editing, and motion graphics. Each project is crafted to deliver bold, engaging, and meaningful visual experiences.
         </p>
         
@@ -71,7 +71,7 @@ const Portfolio = () => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group cursor-pointer bg-white rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300 shadow-lg"
+              className="group cursor-pointer bg-[#F0F8FF] rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300 shadow-lg"
             >
               <div className="relative overflow-hidden">
                 <img 
@@ -106,4 +106,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
