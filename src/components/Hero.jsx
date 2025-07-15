@@ -54,7 +54,7 @@ const Hero = () => {
 
           {/* Imagem à direita */}
             <div className="hidden md:flex relative justify-center sm:justify-end self-end overflow-visible
-                w-full md:max-w-[800px] lg:max-w-[1920px]
+                w-full md:max-w-[800px] lg:max-w-[60%]
                 md:absolute md:bottom-[-40px] md:right-[-100px] lg:right-[-120px]"
             >
               <img
