@@ -68,8 +68,8 @@
 @layer base {
   * {
     border-color: var(--border);
-    outline: 1px solid var(--ring);
-    outline-offset: -1px;
+    /*outline: 1px solid var(--ring);
+    outline-offset: -1px;*/
   }
   body {
     background-color: var(--background);
