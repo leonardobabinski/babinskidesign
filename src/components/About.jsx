@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section id="about" className="about-section py-10">
       <div className="container-custom">
-        <h2 className="section-title">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           About Me
         </h2>
         

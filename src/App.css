@@ -67,10 +67,13 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    border-color: var(--border);
+    outline: 1px solid var(--ring);
+    outline-offset: -1px;
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--background);
+    color: var(--foreground);
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
   
@@ -88,8 +91,19 @@
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  @apply sm:grid-cols-2 items-end h-full;
+    grid-template-columns: 1fr;
+    /* Responsive grid columns and alignment for sm screens and above */
+    /* Equivalent to: sm:grid-cols-2 items-end h-full */
+    align-items: end;
+    height: 100%;
+  }
+  
+  @media (min-width: 640px) {
+    .hero-grid {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: end;
+      height: 100%;
+    }
 }
 
 .about-section {

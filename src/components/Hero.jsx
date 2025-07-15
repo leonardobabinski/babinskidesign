@@ -41,7 +41,7 @@ const Hero = () => {
                 onClick={() => scrollToSection('contact')}
                 className="btn-primary w-full sm:w-auto text-center"
               >
-                Hire Me
+                Contact Me
               </button>
               <button
                 onClick={() => scrollToSection('portfolio')}
