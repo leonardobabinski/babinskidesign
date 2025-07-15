@@ -68,8 +68,6 @@
 @layer base {
   * {
     border-color: var(--border);
-    /*outline: 1px solid var(--ring);
-    outline-offset: -1px;*/
   }
   body {
     background-color: var(--background);
@@ -210,7 +208,6 @@
 
 /* Layout específico */
 .container-custom {
-  width: 600px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
