@@ -6,7 +6,7 @@ const About = () => {
           About Me
         </h2>
         
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center">
           <p className="text-lg leading-relaxed">
             I'm Leonardo Babinski, a designer with 6 years of experience specializing in packaging design, 
             UI/UX and video editing. Passionate about crafting compelling and functional designs, I bring 
