@@ -44,15 +44,17 @@ const Contact = () => {
             <div className="space-y-6 md:space-y-8">
               <div className="flex items-start space-x-4">
                 <div className="bg-[#DABB52] p-3 rounded-lg flex-shrink-0">
-                  <Phone className="text-[#2c5f5f] w-5 h-5 md:w-6 md:h-6" />
+                  <Phone className="text-[#17323A] w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1 text-sm md:text-base">Phone</h4>
                   <a 
-                    href="tel:+5511999999999" 
+                    href="https://wa.me/5543998293471"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-[#DABB52] hover:text-white transition-colors text-sm md:text-base"
                   >
-                    +55 (11) 99999-9999
+                    +55 (43) 99829-3471
                   </a>
                 </div>
               </div>
@@ -64,7 +66,7 @@ const Contact = () => {
                 <div>
                   <h4 className="text-white font-semibold mb-1 text-sm md:text-base">Email</h4>
                   <a 
-                    href="mailto:leonardo@babinski.com" 
+                    href="mailto:babinski@babinskidesign.com.br" 
                     className="text-[#DABB52] hover:text-white transition-colors text-sm md:text-base"
                   >
                     leonardo@babinski.com
@@ -78,7 +80,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold mb-1 text-sm md:text-base">Location</h4>
-                  <p className="text-white/80 text-sm md:text-base">São Paulo, SP - Brazil</p>
+                  <p className="text-[#17323A] text-sm md:text-base">Curitiba, PR - Brazil</p>
                 </div>
               </div>
             </div>
