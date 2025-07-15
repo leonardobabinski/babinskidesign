@@ -52,9 +52,9 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-12 md:py-20 bg-[#2c5f5f]">
+    <section id="portfolio" className="py-12 md:py-20 bg-[#17323A]">
       <div className="container-custom">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[#F0F8FF]">
           My Portfolio
         </h2>
         
@@ -76,17 +76,17 @@ const Portfolio = () => {
                   className="w-full h-40 md:h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <div className="bg-[#f4d03f] p-2 md:p-3 rounded-full">
+                  <div className="bg-[#DABB52] p-2 md:p-3 rounded-full">
                     <ExternalLink className="text-[#2c5f5f] w-5 h-5 md:w-6 md:h-6" />
                   </div>
                 </div>
               </div>
               
               <div className="p-4 md:p-6">
-                <div className="text-xs md:text-sm text-[#f4d03f] font-medium mb-2">
+                <div className="text-xs md:text-sm text-[#17323A] font-medium mb-2">
                   {project.category}
                 </div>
-                <h3 className="text-lg md:text-xl font-semibold mb-2 text-[#2c5f5f]">
+                <h3 className="text-lg md:text-xl font-semibold mb-2 text-[#17323A]">
                   {project.title}
                 </h3>
                 <p className="text-gray-600 text-xs md:text-sm">
