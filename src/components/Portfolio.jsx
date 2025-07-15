@@ -83,7 +83,7 @@ const Portfolio = () => {
                     <ExternalLink className="text-[#2c5f5f] w-5 h-5 md:w-6 md:h-6" />
                   </div>
                 </div>
-              </a>
+              </div>
               
               <div className="p-4 md:p-6">
                 <div className="text-xs md:text-sm text-[#17323A] font-medium mb-2">
@@ -96,7 +96,7 @@ const Portfolio = () => {
                   {project.description}
                 </p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
