@@ -52,8 +52,9 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-12 md:py-20 bg-[#17323A]">
-      <div className="container-custom">
+    <section id="portfolio" className="relative bg-white py-12 md:py-20 overflow-hidden">
+	<div className="absolute top-0 left-0 w-full h-[300px] bg-[#17323A] z-0"></div>
+      <div className="container-custom relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[#F0F8FF]">
           My Portfolio
         </h2>
@@ -80,7 +81,7 @@ const Portfolio = () => {
                 />
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="bg-[#DABB52] p-2 md:p-3 rounded-full">
-                    <ExternalLink className="text-[#2c5f5f] w-5 h-5 md:w-6 md:h-6" />
+                    <ExternalLink className="text-[#17323A] w-5 h-5 md:w-6 md:h-6" />
                   </div>
                 </div>
               </div>
