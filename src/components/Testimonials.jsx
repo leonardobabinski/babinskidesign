@@ -4,27 +4,27 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Maria Silva",
-      role: "CEO, TechStart",
-      content: "Leonardo's work exceeded our expectations. His attention to detail and creative vision transformed our brand identity completely.",
+      name: "Kate L Harrison",
+      role: "Consultor, Camp Galil",
+      content: "Leonardo did a beautiful job. Her communication was quick and professional and the work was perfect. Would hire again!",
       rating: 5,
-      avatar: "MS"
+      avatar: "KH"
     },
     {
       id: 2,
-      name: "João Santos",
-      role: "Marketing Director, InnovaCorp",
-      content: "Professional, creative, and always delivers on time. Leonardo is our go-to designer for all branding projects.",
+      name: "Faustina",
+      role: "CEO, Rock Skip Panda",
+      content: "Working with Leo was great. I had a vision of what I wanted. Leo took my vision and made it awesome! We worked ahead of time using sketches and were able to get me exactly what I wanted. If I have the need again, I will 100% come back to Leo.",
       rating: 5,
-      avatar: "JS"
+      avatar: "AF"
     },
     {
       id: 3,
-      name: "Ana Costa",
-      role: "Founder, EcoProducts",
-      content: "The packaging design Leonardo created for our products increased our sales by 40%. Absolutely incredible work!",
+      name: "Renan Pinheiro",
+      role: "CEO, Imovity",
+      content: "",
       rating: 5,
-      avatar: "AC"
+      avatar: "RP"
     }
   ];
 
