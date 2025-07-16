@@ -5,7 +5,7 @@ const Testimonials = () => {
     {
       id: 1,
       name: "Kate L Harrison",
-      role: "Consultor, Upwork",
+      role: "Consultora, Upwork project",
       content: "Leonardo did a beautiful job. Her communication was quick and professional and the work was perfect. Would hire again!",
       rating: 5,
       avatar: "KH"
@@ -13,7 +13,7 @@ const Testimonials = () => {
     {
       id: 2,
       name: "Faustina",
-      role: "CEO, Fiverr",
+      role: "CEO, Fiverr project",
       content: "Working with Leo was great. I had a vision of what I wanted. Leo took my vision and made it awesome! We worked ahead of time using sketches and were able to get me exactly what I wanted. If I have the need again, I will 100% come back to Leo.",
       rating: 5,
       avatar: "AF"
