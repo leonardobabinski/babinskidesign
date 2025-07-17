@@ -11,7 +11,6 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <div id="google_translate_element" style={{ position: 'absolute', top: 10, right: 10 }}></div>
       <Header />
       <Hero />
       <About />
