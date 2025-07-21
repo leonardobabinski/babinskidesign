@@ -6,8 +6,17 @@ import project3 from '../assets/Imovity.png';
 import project4 from '../assets/inga.png';
 import project5 from '../assets/tsferramentas.png';
 import project6 from '../assets/tradestar.png';
+import project7 from '../assets/institutional.png';
+import project8 from '../assets/yellow.png';
+import project9 from '../assets/amaral.png';
 
 const Portfolio = () => {
+  const [selectedVideo, setSelectedVideo] = useState(null);
+
+  const isVideoLink = (url) => {
+    return url.includes("vimeo.com") || url.includes("youtube.com");
+  };
+
   const projects = [
     {
       id: 1,
@@ -56,34 +65,62 @@ const Portfolio = () => {
       image: project6,
       description: "Landing page design and development",
       link: "https://tradestar.com.br/"
+    },
+    {
+      id: 7,
+      title: "Tradestar - Institutional Vídeo",
+      category: "Institutional Video",
+      image: project6,
+      description: "Vídeo about Tradestar",
+      link: "https://vimeo.com/1065565736"
+    },
+    {
+      id: 8,
+      title: "Yellow September",
+      category: "Vídeo / Motion Graphics",
+      image: project5,
+      description: "Vídeo for Yellow September campaign",
+      link: "https://vimeo.com/1022868303"
+    },
+    {
+      id: 9,
+      title: "Amaral Advogados e Associados",
+      category: "Branding",
+      image: project6,
+      description: "Complete brand identity design",
+      link: "https://www.behance.net/gallery/132848559/Amaral-Advogados-e-associados"
     }
   ];
 
   return (
     <section id="portfolio" className="relative bg-[#F0F8FF] py-10 md:py-10 overflow-hidden">
-	<div className="absolute top-0 left-0 w-full h-[300px] bg-[#17323A] z-0"></div>
+      <div className="absolute top-0 left-0 w-full h-[300px] bg-[#17323A] z-0"></div>
       <div className="container-custom relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[#F0F8FF]">
           My Portfolio
         </h2>
-        
+
         <p className="text-center text-[#F0F8FF]/90 mb-12 md:mb-16 max-w-4xl mx-auto text-sm md:text-base leading-relaxed">
           Explore my portfolio — from branding and packaging to UI/UX, video editing, and motion graphics. Each project is crafted to deliver bold, engaging, and meaningful visual experiences.
         </p>
-        
-        {/* Portfolio Grid - Responsivo */}
+
+        {/* Portfolio Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {projects.map((project) => (
-            <a
+            <div
               key={project.id}
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={() => {
+                if (isVideoLink(project.link)) {
+                  setSelectedVideo(project.link);
+                } else {
+                  window.open(project.link, '_blank', 'noopener,noreferrer');
+                }
+              }}
               className="group cursor-pointer bg-white rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300 shadow-lg"
             >
               <div className="relative overflow-hidden">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-40 md:h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -93,7 +130,7 @@ const Portfolio = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="p-4 md:p-6">
                 <div className="text-xs md:text-sm text-[#17323A] font-medium mb-2">
                   {project.category}
@@ -105,10 +142,32 @@ const Portfolio = () => {
                   {project.description}
                 </p>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
+
+      {/* Modal de Vídeo */}
+      {selectedVideo && (
+        <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-lg max-w-3xl w-full relative">
+            <button
+              onClick={() => setSelectedVideo(null)}
+              className="absolute top-2 right-2 text-gray-600 hover:text-black text-lg"
+            >
+              &times;
+            </button>
+            <div className="w-full h-0 pb-[56.25%] relative">
+              <iframe
+                src={selectedVideo}
+                title="Video"
+                className="absolute top-0 left-0 w-full h-full rounded-b-lg"
+                allow="autoplay; fullscreen"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
