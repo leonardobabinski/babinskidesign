@@ -80,7 +80,7 @@ const Portfolio = () => {
       category: "Vídeo / Motion Graphics",
       image: project8,
       description: "Vídeo for Yellow September campaign",
-      link: "https://vimeo.com/1022868303"
+      link: "https://player.vimeo.com/video/1022868303"
     },
     {
       id: 9,
