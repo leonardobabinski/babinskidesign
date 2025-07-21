@@ -46,9 +46,7 @@ const Testimonials = () => {
         </p>
         
         <div className={`grid gap-8 max-w-6xl mx-auto ${gridCols}`}>
-          {testimonials
-            .filter(t => t.content.trim() !== "")
-            .map((testimonial) => (
+          {visibleTestimonials.map((testimonial) => (
             <div 
               key={testimonial.id}
               className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
