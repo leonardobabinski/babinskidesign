@@ -80,7 +80,7 @@ const Portfolio = () => {
       category: "Vídeo / Motion Graphics",
       image: project8,
       description: "Vídeo for Yellow September campaign",
-      link: "https://player.vimeo.com/video/1004083372"
+      link: "https://vimeo.com/1022868303"
     },
     {
       id: 9,
@@ -147,22 +147,31 @@ const Portfolio = () => {
         </div>
       </div>
 
-      {/* Modal de Vídeo */}
+       {/* Modal de Vídeo */}
       {selectedVideo && (
-        <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-lg max-w-3xl w-full relative">
+        <div
+          className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedVideo(null)} // Fecha ao clicar fora do vídeo
+        >
+          <div
+            className="relative w-full max-w-3xl"
+            onClick={(e) => e.stopPropagation()} // Impede fechar ao clicar no conteúdo
+          >
             <button
               onClick={() => setSelectedVideo(null)}
-              className="absolute top-2 right-2 text-gray-600 hover:text-black text-lg"
+              className="absolute -top-6 right-0 text-white bg-[#17323A] px-3 py-1 rounded hover:bg-white hover:text-[#17323A] transition"
             >
               &times;
             </button>
-            <div className="w-full h-0 pb-[56.25%] relative">
+
+            <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-lg">
               <iframe
                 src={selectedVideo}
                 title="Video"
-                className="absolute top-0 left-0 w-full h-full rounded-b-lg"
+                className="absolute top-0 left-0 w-full h-full"
+                frameBorder="0"
                 allow="autoplay; fullscreen"
+                allowFullScreen
               ></iframe>
             </div>
           </div>
