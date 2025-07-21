@@ -70,15 +70,15 @@ const Portfolio = () => {
       id: 7,
       title: "Tradestar - Institutional Vídeo",
       category: "Institutional Video",
-      image: project6,
+      image: project7,
       description: "Vídeo about Tradestar",
-      link: "https://vimeo.com/1065565736"
+      link: "https://player.vimeo.com/video/1065565736"
     },
     {
       id: 8,
       title: "Yellow September",
       category: "Vídeo / Motion Graphics",
-      image: project5,
+      image: project8,
       description: "Vídeo for Yellow September campaign",
       link: "https://vimeo.com/1022868303"
     },
@@ -86,7 +86,7 @@ const Portfolio = () => {
       id: 9,
       title: "Amaral Advogados e Associados",
       category: "Branding",
-      image: project6,
+      image: project9,
       description: "Complete brand identity design",
       link: "https://www.behance.net/gallery/132848559/Amaral-Advogados-e-associados"
     }
