@@ -39,7 +39,7 @@ const Testimonials = () => {
           Don't just take my word for it. Here's what some of my clients have to say about working with me.
         </p>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {testimonials
             .filter(t => t.content.trim() !== "")
             .map((testimonial) => (
