@@ -26,7 +26,13 @@ const Testimonials = () => {
       rating: 5,
       avatar: "RP"
     }
+    
   ];
+  // Filter out testimonials with empty content
+  const visibleTestimonials = testimonials.filter(t => t.content.trim() !== "");
+  const gridCols = visibleTestimonials.length < 3 
+  ? 'grid-cols-1 sm:grid-cols-2 justify-center' 
+  : 'md:grid-cols-3';
 
   return (
     <section id="testimonials" className="py-10 bg-[#DABB52]">
@@ -39,7 +45,7 @@ const Testimonials = () => {
           Don't just take my word for it. Here's what some of my clients have to say about working with me.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className={`grid gap-8 max-w-6xl mx-auto ${gridCols}`}>
           {testimonials
             .filter(t => t.content.trim() !== "")
             .map((testimonial) => (
