@@ -22,7 +22,7 @@ const Testimonials = () => {
       id: 3,
       name: "Renan Pinheiro",
       role: "CEO, Imovity",
-      content: "",
+      content: "Leonardo was essential in translating Imovity’s essence into a unique and memorable visual identity. From the very beginning, he immersed himself in our vision, understanding not only what we wanted to communicate but also how we wanted our clients to feel when interacting with the brand. The result went far beyond our expectations: a modern, professional, and full-of-personality identity that perfectly conveys Imovity’s purpose. Beyond his talent, his dedication and attention to detail made all the difference throughout the process. I recommend him without hesitation!",
       rating: 5,
       avatar: "RP"
     }
