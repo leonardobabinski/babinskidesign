@@ -8,6 +8,7 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
+import CustomCursor from './components/CustomCursor';
 import useReveal from './hooks/use-reveal';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Contact />
       <Footer />
       <WhatsAppButton />
+      <CustomCursor />
       
     </div>
     

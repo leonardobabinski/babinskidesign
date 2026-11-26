@@ -345,3 +345,57 @@
 @media (prefers-reduced-motion: reduce) {
   .card-in { animation: none; }
 }
+
+/* Cursor personalizado (src/components/CustomCursor.jsx) */
+html.has-custom-cursor,
+html.has-custom-cursor * {
+  cursor: none !important;
+}
+html.has-custom-cursor input,
+html.has-custom-cursor textarea,
+html.has-custom-cursor [contenteditable="true"] {
+  cursor: text !important;
+}
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  will-change: translate;
+}
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  background: #fff;
+  transition: opacity 0.2s ease, scale 0.2s ease;
+}
+.cursor-ring {
+  width: 36px;
+  height: 36px;
+  margin: -18px 0 0 -18px;
+  border: 1.5px solid #fff;
+  transition: scale 0.25s ease, background-color 0.25s ease, opacity 0.2s ease, border-color 0.25s ease;
+}
+.cursor-ring.is-hover {
+  scale: 1.6;
+  background-color: #fff;
+  border-color: transparent;
+}
+.cursor-dot.is-hover {
+  scale: 0;
+}
+.cursor-ring.is-down {
+  scale: 0.8;
+}
+.cursor-ring.is-hover.is-down {
+  scale: 1.3;
+}
+.cursor-dot.is-hidden,
+.cursor-ring.is-hidden {
+  opacity: 0;
+}
