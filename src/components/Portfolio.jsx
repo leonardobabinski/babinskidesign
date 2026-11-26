@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
-import project1 from '../assets/Afternoon.png';
-import project2 from '../assets/tsferramentas2.png';
-import project3 from '../assets/Imovity.png';
-import project4 from '../assets/inga.png';
-import project5 from '../assets/tsferramentas.png';
-import project6 from '../assets/tradestar.png';
-import project7 from '../assets/institutional.png';
-import project8 from '../assets/yellow.png';
-import project9 from '../assets/amaral.png';
+import project1 from '../assets/Afternoon.webp';
+import project2 from '../assets/tsferramentas2.webp';
+import project3 from '../assets/Imovity.webp';
+import project4 from '../assets/inga.webp';
+import project5 from '../assets/tsferramentas.webp';
+import project6 from '../assets/tradestar.webp';
+import project7 from '../assets/institutional.webp';
+import project8 from '../assets/yellow.webp';
+import project9 from '../assets/amaral.webp';
 
 const Portfolio = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
@@ -120,6 +120,8 @@ const Portfolio = () => {
             >
               <div className="relative overflow-hidden">
                 <img
+                  loading="lazy"
+                  decoding="async"
                   src={project.image}
                   alt={project.title}
                   className="w-full h-40 md:h-48 object-cover group-hover:scale-110 transition-transform duration-300"
