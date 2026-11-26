@@ -45,7 +45,7 @@ const projects = [
     category: 'Packaging',
     tags: ['Packaging'],
     image: project4,
-    description: 'Product packaging design',
+    description: "Packaging for Ingá Import's Em Casa Tem product line",
     link: 'https://www.behance.net/gallery/192272911/Algumas-embalagens',
   },
   {
