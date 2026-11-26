@@ -8,10 +8,17 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
+import { useEffect } from 'react';
 import useReveal from './hooks/use-reveal';
 
 function App() {
   useReveal();
+
+  // Ao voltar de um estudo de caso (ex.: /#portfolio), rola até a seção certa
+  useEffect(() => {
+    const id = window.location.hash.slice(1);
+    if (id) document.getElementById(id)?.scrollIntoView();
+  }, []);
 
   return (
     <div className="App">
