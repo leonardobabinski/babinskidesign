@@ -49,12 +49,12 @@ const Contact = () => {
                 <div>
                   <h4 className="text-white font-semibold mb-1 text-sm md:text-base">Phone</h4>
                   <a 
-                    href="https://wa.me/5543998293471"
+                    href="https://wa.me/5541987807482"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#DABB52] hover:text-white transition-colors text-sm md:text-base"
                   >
-                    +55 (43) 99829-3471
+                    +55 (41) 98780-7482
                   </a>
                 </div>
               </div>
