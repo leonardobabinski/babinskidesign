@@ -14,7 +14,7 @@ const Hero = () => {
       className="hero-section relative overflow-hidden py-10"
     >
       <div className="container-custom w-full relative">
-        <div className="grid sm:grid-cols-2 items-end gap-8">
+        <div className="grid md:grid-cols-2 items-end gap-8">
           
           {/* Texto à esquerda */}
           <div className="flex flex-col gap-6">
@@ -52,19 +52,14 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Imagem à direita */}
-            <div className="hidden md:block relative justify-center sm:justify-end self-end overflow-visible
-                w-full lg:max-w-[70%]
-                md:absolute md:bottom-[-40px] md:right-[-150px] lg:right-[-150px]"
-            >
-              <img
-                src={profilePhoto}
-                alt="Leonardo Babinski"
-                className="
-                w-full h-auto
-                "
-              />
-            </div>
+          {/* Imagem à direita: fica dentro da própria coluna, então não invade o texto nem é cortada com zoom */}
+          <div className="hidden md:flex justify-end items-end self-end -mb-10">
+            <img
+              src={profilePhoto}
+              alt="Leonardo Babinski"
+              className="w-full max-w-[480px] h-auto object-contain"
+            />
+          </div>
         </div>
       </div>
     </section>
