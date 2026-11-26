@@ -6,7 +6,7 @@ const Testimonials = () => {
       id: 1,
       name: "Kate L Harrison",
       role: "Consultora, Upwork project",
-      content: "Leonardo did a beautiful job. Her communication was quick and professional and the work was perfect. Would hire again!",
+      content: "Leonardo did a beautiful job. His communication was quick and professional and the work was perfect. Would hire again!",
       rating: 5,
       avatar: "KH"
     },

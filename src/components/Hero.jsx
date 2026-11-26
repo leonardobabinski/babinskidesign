@@ -1,4 +1,4 @@
-import profilePhoto from '../assets/profile_photo.png';
+import profilePhoto from '../assets/profile_photo.webp';
 
 const Hero = () => {
   const scrollToSection = (sectionId) => {
@@ -18,6 +18,7 @@ const Hero = () => {
           
           {/* Texto à esquerda */}
           <div className="flex flex-col gap-6">
+
             <p className="graphic-designer-label text-white/80 text-sm md:text-base">
               Graphic Designer
             </p>
@@ -52,11 +53,22 @@ const Hero = () => {
             </div>
           </div>
 
+          {/* Foto no celular: embaixo do texto, encostada na faixa amarela (igual ao desktop) */}
+          <div className="md:hidden flex justify-center -mb-10 mt-2">
+            <img
+              src={profilePhoto}
+              alt=""
+              aria-hidden="true"
+              className="w-[85%] max-w-[340px] h-auto"
+            />
+          </div>
+
           {/* Imagem à direita: fica dentro da própria coluna, então não invade o texto nem é cortada com zoom */}
           <div className="hidden md:flex justify-end items-end self-end -mb-10">
             <img
               src={profilePhoto}
               alt="Leonardo Babinski"
+              fetchPriority="high"
               className="w-full max-w-[480px] h-auto object-contain"
             />
           </div>
