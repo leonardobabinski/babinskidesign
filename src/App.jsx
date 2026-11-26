@@ -7,8 +7,12 @@ import Portfolio from './components/Portfolio';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
+import useReveal from './hooks/use-reveal';
 
 function App() {
+  useReveal();
+
   return (
     <div className="App">
       <Header />
@@ -19,6 +23,7 @@ function App() {
       <Testimonials />
       <Contact />
       <Footer />
+      <WhatsAppButton />
       
     </div>
     
