@@ -5,7 +5,14 @@ import WhatsAppButton from '../components/WhatsAppButton';
 import palette from '../assets/imovity/palette.webp';
 import symbolExplorations from '../assets/imovity/symbol-explorations.webp';
 import weightExplorations from '../assets/imovity/weight-explorations.webp';
-import guideline from '../assets/imovity/guideline.webp';
+import glCover from '../assets/imovity/gl-cover.webp';
+import glLogo from '../assets/imovity/gl-logo.webp';
+import glPalette from '../assets/imovity/gl-palette.webp';
+import glTypography from '../assets/imovity/gl-typography.webp';
+import appBusinessCard from '../assets/imovity/app-business-card.webp';
+import appStationery from '../assets/imovity/app-stationery.webp';
+import appIcons from '../assets/imovity/app-icons.webp';
+import appSocial from '../assets/imovity/app-social.webp';
 import finalStacked from '../assets/imovity/final-stacked.webp';
 import finalTagline from '../assets/imovity/final-tagline.webp';
 import finalSymbol from '../assets/imovity/final-symbol.webp';
@@ -120,8 +127,9 @@ const ImovityCaseStudy = () => {
             <Step number="02" title="Leaving the obvious monogram behind">
               <p>
                 The first instinct was an &quot;IM&quot; monogram, but every version felt generic, like a hundred other
-                startups. So I moved to an abstract symbol: two interlocking rings with yellow accent points, a mark
-                that pairs naturally with the wordmark and can stand on its own once people know the brand.
+                startups. So I moved to an abstract symbol: two interlocking rings that represent connection, the heart
+                of a CRM, linking a business to its clients. The yellow points mark where the two meet. It pairs
+                naturally with the wordmark and can stand on its own once people know the brand.
               </p>
               <p>
                 I presented several symbol and color variations. The team picked the first one for its clean feel,
@@ -147,10 +155,27 @@ const ImovityCaseStudy = () => {
               <p>
                 To keep the project moving, I organized everything into a single brand guideline the team could use
                 right away: the story and values behind the brand, logo usage, color palette and color psychology,
-                typography, imagery and tone of voice.
+                typography, imagery and tone of voice.</p>
+              <p>
+                The final palette pairs Deep Blue as the primary color with an orange accent, charcoal and gray, and
+                Poppins carries all the typography, in seven weights.
               </p>
             </Step>
-            <Figure src={guideline} alt="Overview of the Imovity brand guideline pages" caption="Pages from the Imovity brand guideline, straight from the working file." className="md:ml-[152px]" />
+            <div className="md:ml-[152px]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {[
+                  [glCover, 'Brand guideline cover'],
+                  [glLogo, 'Main logo on light and dark backgrounds'],
+                  [glPalette, 'Color palette page'],
+                  [glTypography, 'Typography page'],
+                ].map(([src, alt]) => (
+                  <div key={alt} className="bg-white rounded-xl overflow-hidden shadow-lg">
+                    <img src={src} alt={alt} loading="lazy" decoding="async" className="w-full h-auto" />
+                  </div>
+                ))}
+              </div>
+              <p className="text-sm text-[#17323A]/70 mt-3">Pages from the Imovity brand guideline.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -167,6 +192,32 @@ const ImovityCaseStudy = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 max-w-4xl">
             <img src={finalSymbol} alt="Imovity symbol" loading="lazy" className="w-full rounded-xl" />
             <img src={finalStacked} alt="Imovity stacked logo" loading="lazy" className="w-full rounded-xl" />
+          </div>
+        </div>
+      </section>
+
+      {/* Aplicações */}
+      <section className="py-16 md:py-24">
+        <div className="container-custom max-w-5xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#17323A] mb-4">The brand in use</h2>
+          <p className="text-[#17323A]/80 text-base md:text-lg leading-relaxed max-w-3xl mb-10">
+            The guideline also shows the identity applied to everyday touchpoints, so the team could see how it
+            works beyond the logo.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+            {[
+              [appBusinessCard, 'Business card'],
+              [appStationery, 'Stationery'],
+              [appIcons, 'App icons'],
+              [appSocial, 'Social media posts and banner'],
+            ].map(([src, label]) => (
+              <figure key={label}>
+                <div className="bg-white rounded-xl overflow-hidden shadow-lg">
+                  <img src={src} alt={`Imovity ${label.toLowerCase()}`} loading="lazy" decoding="async" className="w-full h-auto" />
+                </div>
+                <figcaption className="text-sm text-[#17323A]/70 mt-2">{label}</figcaption>
+              </figure>
+            ))}
           </div>
         </div>
       </section>
