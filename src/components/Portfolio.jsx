@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ExternalLink, Layers } from 'lucide-react';
+import { ArrowRight, ExternalLink, Layers } from 'lucide-react';
 import project1 from '../assets/Afternoon.webp';
 import project2 from '../assets/tsferramentas2.webp';
 import project3 from '../assets/Imovity.webp';
@@ -22,7 +22,8 @@ const projects = [
     tags: ['Branding'],
     image: project3,
     description: 'Complete brand identity design',
-    link: 'https://www.behance.net/gallery/216802011/Imovity',
+    caseStudy: true,
+    link: '/work/imovity/',
   },
   {
     id: 'tradestar',
@@ -82,7 +83,9 @@ const Portfolio = () => {
   const [selectedGroup, setSelectedGroup] = useState(null);
 
   const openLink = (link) => {
-    if (isVideoLink(link)) {
+    if (link.startsWith('/')) {
+      window.location.href = link;
+    } else if (isVideoLink(link)) {
       setSelectedGroup(null);
       setSelectedVideo(link);
     } else {
@@ -159,13 +162,20 @@ const Portfolio = () => {
                 />
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <div className="bg-[#DABB52] p-2 md:p-3 rounded-full">
-                    {project.pieces ? (
+                    {project.caseStudy ? (
+                      <ArrowRight className="text-[#17323A] w-5 h-5 md:w-6 md:h-6" />
+                    ) : project.pieces ? (
                       <Layers className="text-[#17323A] w-5 h-5 md:w-6 md:h-6" />
                     ) : (
                       <ExternalLink className="text-[#17323A] w-5 h-5 md:w-6 md:h-6" />
                     )}
                   </div>
                 </div>
+                {project.caseStudy && (
+                  <span className="absolute top-3 right-3 bg-[#DABB52] text-[#17323A] text-xs font-semibold px-2 py-1 rounded">
+                    Case study
+                  </span>
+                )}
                 {project.pieces && (
                   <span className="absolute top-3 right-3 bg-[#17323A] text-[#F0F8FF] text-xs font-medium px-2 py-1 rounded">
                     {project.pieces.length} projects
